@@ -1,0 +1,97 @@
+var i=1;
+var j=i+1;
+var h=i-1;
+var i6=1;
+var ii=window.innerWidth
+if(ii<=600){
+document.getElementById(i6+"").style.display="block";
+}else{
+document.getElementById(h+"").style.display="block";
+document.getElementById(h+"").style.opacity="0.5";
+document.getElementById(i+"").style.display="block";
+document.getElementById(i+"").style.height="400px";
+document.getElementById(i+"").style.width="400px"
+document.getElementById(j+"").style.display="block";
+document.getElementById(j+"").style.opacity="0.5";}
+function moveleft(){
+    if(ii<=600){
+        document.getElementById(i6+"").style.display="none";
+        i6++;
+      if(i6>4){
+         document.getElementById("great").style.opacity="0"
+         document.getElementById(i6+"").style.opacity="1";
+         document.getElementById(i6+"").style.display="block";
+      }else{
+     document.getElementById(i6+"").style.opacity="1";
+     document.getElementById(i6+"").style.display="block";
+     document.getElementById("less").style.opacity="1";}
+    }else{
+document.getElementById(h+"").style.display="none";
+   h++;i++;j++;
+ if(j>5){
+    document.getElementById("great").style.opacity="0"
+    document.getElementById(h+"").style.display="block";
+    document.getElementById(h+"").style.opacity="0.5";
+    document.getElementById(h+"").style.height="300px";
+    document.getElementById(h+"").style.width="300px";
+    document.getElementById(i+"").style.opacity="1";
+    document.getElementById(i+"").style.display="block";
+    document.getElementById(i+"").style.height="400px";
+    document.getElementById(i+"").style.width="400px";
+    document.getElementById(j+"").style.display="block";
+    document.getElementById(j+"").style.opacity="0";
+ }else{
+   document.getElementById(h+"").style.display="block";
+document.getElementById(h+"").style.opacity="0.5";
+document.getElementById(h+"").style.height="300px";
+document.getElementById(h+"").style.width="300px";
+document.getElementById(i+"").style.opacity="1";
+document.getElementById(i+"").style.display="block";
+document.getElementById(i+"").style.height="400px";
+document.getElementById(i+"").style.width="400px";
+document.getElementById(j+"").style.display="block";
+document.getElementById(j+"").style.opacity="0.5";
+document.getElementById("less").style.opacity="1";}
+    }}
+function moveright(){
+    if(ii<=600){
+        document.getElementById(i6+"").style.display="none";
+        i6--;
+        if(i6<1){
+        document.getElementById("less").style.opacity="0";
+        document.getElementById(i6+"").style.opacity="1";
+        document.getElementById(i6+"").style.display="block";
+        }else{
+    document.getElementById(i6+"").style.opacity="1";
+    document.getElementById(i6+"").style.display="block";
+    document.getElementById("great").style.opacity="1";
+    }}else{
+    document.getElementById(j+"").style.display="none";
+    h--;i--;j--;
+    if(h<0){
+    document.getElementById("less").style.opacity="0";
+    document.getElementById(h+"").style.display="block";
+    document.getElementById(h+"").style.opacity="0";
+    document.getElementById(i+"").style.opacity="1";
+    document.getElementById(i+"").style.display="block";
+    document.getElementById(i+"").style.height="400px";
+    document.getElementById(i+"").style.width="400px";
+    document.getElementById(j+"").style.display="block";
+    document.getElementById(j+"").style.opacity="0.5";
+    document.getElementById(j+"").style.height="300px";
+    document.getElementById(j+"").style.width="300px";
+    }else{
+        document.getElementById(h+"").style.display="block";
+document.getElementById(h+"").style.opacity="0.5";
+document.getElementById(i+"").style.opacity="1";
+document.getElementById(i+"").style.display="block";
+document.getElementById(i+"").style.height="400px";
+document.getElementById(i+"").style.width="400px";
+document.getElementById(j+"").style.display="block";
+document.getElementById(j+"").style.opacity="0.5";
+document.getElementById(j+"").style.height="300px";
+document.getElementById(j+"").style.width="300px";
+document.getElementById("great").style.opacity="1";
+    }}
+   
+}
